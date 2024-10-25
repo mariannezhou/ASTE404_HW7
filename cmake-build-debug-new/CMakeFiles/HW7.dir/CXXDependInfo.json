@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/Marianne/OneDrive/Documents/School/ASTE404/HW7/cmake-build-debug-new",
+	"dir-cur-src" : "C:/Users/Marianne/OneDrive/Documents/School/ASTE404/HW7",
+	"dir-top-bld" : "C:/Users/Marianne/OneDrive/Documents/School/ASTE404/HW7/cmake-build-debug-new",
+	"dir-top-src" : "C:/Users/Marianne/OneDrive/Documents/School/ASTE404/HW7",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Marianne/OneDrive/Documents/School/ASTE404/HW7/cmake-build-debug-new/CMakeFiles/HW7.dir"
+}

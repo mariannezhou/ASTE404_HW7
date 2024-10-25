@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\vec_tests.dir\\test\\vec_tests.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Marianne\\OneDrive\\Documents\\School\\ASTE404\\HW7\\cmake-build-debug-new\\vc140.pdb",
+                "CMakeFiles\\vec_tests.dir\\test\\vec_tests.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

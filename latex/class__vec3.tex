@@ -1,0 +1,272 @@
+\doxysection{\+\_\+vec3\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class__vec3}{}\label{class__vec3}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+
+
+3D Vector class  
+
+
+
+
+{\ttfamily \#include $<$vec.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__vec3_a6d4f886401b1bba2ca49a2918c2ad5dc}{\+\_\+vec3}} ()
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<} Generic 3D vector of type T \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class__vec3_ae790417c9b3713558524c2136951bcaa}{\+\_\+vec3}} (T a, T b, T c)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class__vec3_a34682db33d91d21559bd913c89ad7d37}{operator\mbox{[}$\,$\mbox{]}}} (int \mbox{\hyperlink{gmock-matchers-comparisons__test_8cc_acb559820d9ca11295b4500f179ef6392}{i}})
+\begin{DoxyCompactList}\small\item\em Access a component of the vector. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class__vec3_a047b9cbc385e14f313a4f5de392923df}{operator\mbox{[}$\,$\mbox{]}}} (int \mbox{\hyperlink{gmock-matchers-comparisons__test_8cc_acb559820d9ca11295b4500f179ef6392}{i}}) const
+\begin{DoxyCompactList}\small\item\em Access a component of the vector (with a const) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class__vec3_a5b0c52131143a6e240867d956714a52a}{d}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array storing components of the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \mbox{\hyperlink{class__vec3_abd5065b04c6eadda6c761cb6d8bf760a}{operator+}} (const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&a, const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Adds two vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \mbox{\hyperlink{class__vec3_a381d42a47c775d4885bd88165dc24d4c}{operator-\/}} (const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&a, const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Subtracts two vectors. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class__vec3_a9660915089ddf52a1798ea286b791df4}{dot}} (const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&a, const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Dot products two vectors. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class__vec3_af97e6c6a1941f3e6f25d630a814f162b}{mag}} (const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Computes the magnitude of the vector. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class__vec3_a02e1acbf4b8a6f9236b2449558718629}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Outputs the vector to an output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class \+\_\+vec3$<$ T $>$}
+3D Vector class 
+
+This class is a 3D vector of type T that supports addition, subtraction, dot product, and magnitude
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of vector components \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class__vec3_a6d4f886401b1bba2ca49a2918c2ad5dc}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!\_vec3@{\_vec3}}
+\index{\_vec3@{\_vec3}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_vec3()}{\_vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class__vec3_a6d4f886401b1bba2ca49a2918c2ad5dc} 
+template$<$typename T $>$ \\
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$\mbox{\hyperlink{class__vec3}{\+::\+\_\+vec3}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\texorpdfstring{$<$}{<} Generic 3D vector of type T 
+
+Default initialize vector to (0,0,0) \Hypertarget{class__vec3_ae790417c9b3713558524c2136951bcaa}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!\_vec3@{\_vec3}}
+\index{\_vec3@{\_vec3}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_vec3()}{\_vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class__vec3_ae790417c9b3713558524c2136951bcaa} 
+template$<$typename T $>$ \\
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$\mbox{\hyperlink{class__vec3}{\+::\+\_\+vec3}} (\begin{DoxyParamCaption}\item[{T}]{a}{, }\item[{T}]{b}{, }\item[{T}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor. 
+
+Initializes vector with components
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Component 1 \\
+\hline
+{\em b} & Component 2 \\
+\hline
+{\em c} & Component 3 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class__vec3_a34682db33d91d21559bd913c89ad7d37}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class__vec3_a34682db33d91d21559bd913c89ad7d37} 
+template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access a component of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of component where i = 0, 1, 2 for (0, 1, 2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& reference to component at index i 
+\end{DoxyReturn}
+\Hypertarget{class__vec3_a047b9cbc385e14f313a4f5de392923df}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class__vec3_a047b9cbc385e14f313a4f5de392923df} 
+template$<$typename T $>$ \\
+T \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access a component of the vector (with a const) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of component where i = 0, 1, 2 for (0, 1, 2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T Component at index i 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class__vec3_a9660915089ddf52a1798ea286b791df4}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!dot@{dot}}
+\index{dot@{dot}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dot}{dot}}
+{\footnotesize\ttfamily \label{class__vec3_a9660915089ddf52a1798ea286b791df4} 
+template$<$typename T $>$ \\
+T dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{a}{, }\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dot products two vectors. 
+
+\[
+\mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3
+\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector 1 \\
+\hline
+{\em b} & Vector 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T Dot product of the vectors 
+\end{DoxyReturn}
+\Hypertarget{class__vec3_af97e6c6a1941f3e6f25d630a814f162b}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!mag@{mag}}
+\index{mag@{mag}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mag}{mag}}
+{\footnotesize\ttfamily \label{class__vec3_af97e6c6a1941f3e6f25d630a814f162b} 
+template$<$typename T $>$ \\
+double mag (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Computes the magnitude of the vector. 
+
+\[
+ ||\mathbf{a}|| = \sqrt{a_1^2 + a_2^2 + a_3^2}
+ \]
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The magnitude of the vector 
+\end{DoxyReturn}
+\Hypertarget{class__vec3_abd5065b04c6eadda6c761cb6d8bf760a}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+}{operator+}}
+{\footnotesize\ttfamily \label{class__vec3_abd5065b04c6eadda6c761cb6d8bf760a} 
+template$<$typename T $>$ \\
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{a}{, }\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Adds two vectors. 
+
+\[
+\mathbf{c} = \mathbf{a} + \mathbf{b}
+\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector 1 \\
+\hline
+{\em b} & Vector 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting vector after addition 
+\end{DoxyReturn}
+\Hypertarget{class__vec3_a381d42a47c775d4885bd88165dc24d4c}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/}{operator-}}
+{\footnotesize\ttfamily \label{class__vec3_a381d42a47c775d4885bd88165dc24d4c} 
+template$<$typename T $>$ \\
+\mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{a}{, }\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Subtracts two vectors. 
+
+\[
+\mathbf{c} = \mathbf{a} - \mathbf{b}
+\]
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector 1 \\
+\hline
+{\em b} & Vector 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting vector after subtraction 
+\end{DoxyReturn}
+\Hypertarget{class__vec3_a02e1acbf4b8a6f9236b2449558718629}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class__vec3_a02e1acbf4b8a6f9236b2449558718629} 
+template$<$typename T $>$ \\
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$ \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Outputs the vector to an output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output stream \\
+\hline
+{\em a} & The vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& Reference to output stream 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class__vec3_a5b0c52131143a6e240867d956714a52a}\index{\_vec3$<$ T $>$@{\_vec3$<$ T $>$}!d@{d}}
+\index{d@{d}!\_vec3$<$ T $>$@{\_vec3$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{class__vec3_a5b0c52131143a6e240867d956714a52a} 
+template$<$typename T $>$ \\
+T \mbox{\hyperlink{class__vec3}{\+\_\+vec3}}$<$ T $>$\+::d\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Array storing components of the vector. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{vec_8h}{vec.\+h}}\end{DoxyCompactItemize}
